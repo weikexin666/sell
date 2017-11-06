@@ -1,0 +1,20 @@
+@mixin bgImg($url){
+  background-image: url($url + "@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (-webkit-device-aspect-ratio : 3),(device-aspect-ratio : 3){
+    background-image: url($url + "@3x.png");
+  }
+}
+@mixin borderBtm($color){
+  position: relative;
+  &::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid $color;
+  }
+}
