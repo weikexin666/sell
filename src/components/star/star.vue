@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~common/css/mixin.scss";
 .star{
   font-size: 0;
@@ -58,8 +58,8 @@ export default {
       display: inline-block;
       background-repeat: no-repeat;
   }
-  .star-48{
-    .star-item{
+  &.star-48 {
+    .star-item {
       width: 20px;
       height: 20px;
       margin-right: 22px;
@@ -67,19 +67,19 @@ export default {
       &.last.child {
         margin-right: 0px;
       }
-      &.on{
+      &.on {
         @include bgImg('star48_on');
       }
-      &.half{
+      &.half {
         @include bgImg('star48_half');
       }
-      &.off{
+      &.off {
         @include bgImg('star48_off');
       }
     }
   }
-  .star-36{
-    .star-item{
+  .star-36 {
+    .star-item {
       width: 15px;
       height: 15px;
       margin-right: 6px;
@@ -87,19 +87,19 @@ export default {
       &.last.child {
         margin-right: 0px;
       }
-      &.on{
+      &.on {
         @include bgImg('star36_on');
       }
-      &.half{
+      &.half {
         @include bgImg('star36_half');
       }
-      &.off{
+      &.off {
         @include bgImg('star36_off');
       }
     }
   }
-  .star-24{
-    .star-item{
+  .star-24 {
+    .star-item {
       width: 10px;
       height: 10px;
       margin-right: 3px;
@@ -107,13 +107,13 @@ export default {
       &.last.child {
         margin-right: 0px;
       }
-      &.on{
+      &.on {
         @include bgImg('star24_on');
       }
-      &.half{
+      &.half {
         @include bgImg('star24_half');
       }
-      &.off{
+      &.off {
         @include bgImg('star24_off');
       }
     }
